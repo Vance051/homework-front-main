@@ -1,5 +1,4 @@
 import {UserList} from './UserList';
-import {UserType} from "../2/HW2";
 
 export const HW1 = () => {
 
@@ -15,8 +14,7 @@ export const HW1 = () => {
   // ❗ id на элементах не удаляем и не изменяем! Они нужны для автотестов.
   // Если нужно подставить элемент массива в id, то подставляем по аналогии с другими элементами!
 
-
-	const users:UserType[] = [
+	const users = [
 		{id: 1, name: 'John', age: 25, address: {street: '123 Main St', city: 'New York'}},
 		{id: 2, name: 'Alice', age: 30, address: {street: '456 Elm St', city: 'San Francisco'}},
 		{id: 3, name: 'Bob', age: 35, address: {street: '789 Oak St', city: 'Seattle'}},
@@ -36,7 +34,7 @@ export const HW1 = () => {
 
 	return (
 		<div id={'hw01'}>
-			<UserList users={users} />
+			{/*<UserList users={'НАЗВАНИЕ МАССИВА, КОТОРЫЙ МЫ ПЕРЕДАЕМ'} />*/}
 		</div>
 	);
 };
